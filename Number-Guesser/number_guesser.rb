@@ -1,12 +1,11 @@
-def comp_choice
-	number = rand(1..10)
+loop do
+number = 8
 puts "Pick a number between 1 and 10!"
-answer = gets.chomp
+answer = gets.chomp.to_i
 if number == answer
 	puts "You win!"
-else
-	puts "Nope! Try again!"
-	puts comp_choice
-end
+	  break 
+else 
+	puts "Try again!"
 end
 end
